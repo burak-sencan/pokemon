@@ -12,7 +12,6 @@ const PokemonCard = ({ pokemon }) => {
 
   return (
     <div className="relative flex flex-col items-center justify-center rounded-md bg-white p-4 shadow-md dark:bg-slate-900 dark:text-white">
-      <Favorite data={data} />
       <p className="capitalize ">{pokemon.name}</p>
       <Link to={`/${pokemon.name}`} className="flex w-full justify-center">
         <img src={data.sprites.front_shiny} alt={pokemon.name} />
